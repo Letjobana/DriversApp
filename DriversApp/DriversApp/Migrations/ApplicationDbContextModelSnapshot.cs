@@ -55,6 +55,9 @@ namespace DriversApp.Migrations
                     b.Property<int>("ManagerId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Requirement")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Section")
                         .HasColumnType("nvarchar(max)");
 

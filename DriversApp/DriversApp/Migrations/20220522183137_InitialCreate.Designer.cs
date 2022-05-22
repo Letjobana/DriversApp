@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DriversApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220522175128_InitialCreate")]
+    [Migration("20220522183137_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -56,6 +56,9 @@ namespace DriversApp.Migrations
 
                     b.Property<int>("ManagerId")
                         .HasColumnType("int");
+
+                    b.Property<string>("Requirement")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Section")
                         .HasColumnType("nvarchar(max)");

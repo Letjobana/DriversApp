@@ -71,6 +71,7 @@ namespace DriversApp.Migrations
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Department = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Section = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Requirement = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ManagerId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
