@@ -27,6 +27,7 @@ namespace DriversApp
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             services.AddScoped<IManagerRepository, ManagerRepository>();
             services.AddScoped<ISectionRepository, SectionRepository>();
+            services.AddScoped<IRequirementRepository, RequirementRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
